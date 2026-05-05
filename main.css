@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.navigation li {
+    margin: 0 30px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: yellow;
+}
+
+.profileSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.profileSection img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.profileSection div {
+    max-width: 500px;
+    text-align: left;
+}
+
+.profileSection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body > p {
+    width: 65%;
+    max-width: 800px;
+    margin: 12px auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.carousel {
+    width: 70%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.carousel-item img {
+    height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.imageCaption {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px auto;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.accordion {
+    width: 70%;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.formBox {
+    border: 2px solid black;
+    width: 330px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 8px 0;
+    }
+
+    .profileSection {
+        flex-direction: column;
+    }
+
+    .carousel,
+    .accordion,
+    .formBox {
+        width: 90%;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+}
